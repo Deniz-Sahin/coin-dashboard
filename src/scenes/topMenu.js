@@ -30,6 +30,10 @@ export default function TopMenu() {
             if(decoded?.role === "admin")
                 setAdmin(true);
         }
+        else
+        {
+            history.push("/login");
+        }
     }, []);
 
     return (
