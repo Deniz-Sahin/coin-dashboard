@@ -1,0 +1,60 @@
+{
+  "name": "coin-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@date-io/moment": "^1.3.13",
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "^3.2.10",
+    "@reduxjs/toolkit": "^1.5.0",
+    "classnames": "^2.2.6",
+    "prop-types": "~15.8.1",
+    "fontsource-roboto": "^3.0.3",
+    "lodash": "^4.17.15",
+    "password-validator": "^5.1.1",
+    "notistack": "^1.0.1",
+    "jss-plugin-expand": "^10.2.0",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.32",
+    "react": "^16.13.1",
+    "react-chartjs-2": "^2.9.0",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.5.0",
+    "react-moment": "^0.9.7",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "react-to-print": "^2.12.1",
+    "redux-persist": "^6.0.0",
+    "jwt-decode": "3.1.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "resolutions": {
+    "fsevents": ""
+  },
+  "devDependencies": {
+    "customize-cra": "^1.0.0",
+    "react-app-rewire-alias": "^0.1.4",
+    "react-app-rewired": "^2.1.6"
+  }
+}
