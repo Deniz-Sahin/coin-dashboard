@@ -119,6 +119,8 @@ export default function AdminPage() {
 				<CardActions className={classes.projectCardActions}>
                     <Grid item xs={2} className={classes.cardButton}>
                         <Button
+							variant="contained"
+							color="primary"
                             onClick={() => {
                                 selectedCoins.includes(coin.id) ?
                                 handleRemoveCoin(coin) :

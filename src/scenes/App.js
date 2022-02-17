@@ -1,8 +1,7 @@
 import { JwtProvider, SnackbarProvider } from "../services";
 import { MuiThemeProvider, createTheme } from "@material-ui/core";
-import React, { useEffect, useState } from "react";
 import { default as ReduxProvider, configureRedux } from "../utils/Redux";
-import { Route, BrowserRouter as Router, Switch, useLocation } from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { StylesProvider, jssPreset } from "@material-ui/core/styles";
 
 import Login from "./login"
@@ -11,7 +10,7 @@ import Main from "./Main";
 import MomentUtils from "@date-io/moment";
 import { MuiPickersUtilsProvider } from "@material-ui/pickers";
 import {PageCenteredProgress} from "../components/CenteredProgress";
-import TopMenu from "./topMenu";
+import React from "react";
 import { create } from "jss";
 import jssExpand from "jss-plugin-expand";
 import reducer from "../actions";

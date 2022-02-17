@@ -1,7 +1,6 @@
-import { AuthContext, FetchError, handleErrors } from "./AuthContext";
 import React, { useEffect, useState } from "react";
 
-import { useHistory } from "react-router-dom";
+import { AuthContext } from "./AuthContext";
 
 export default function JwtProvider({ children }) {
 	const [loading, setLoading] = useState(true);

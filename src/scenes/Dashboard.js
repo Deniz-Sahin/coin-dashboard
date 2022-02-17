@@ -1,31 +1,15 @@
 import {
-	AppBar,
 	Button,
-	Card,
-	CardActions,
-	CardContent,
-	CardHeader,
-	CircularProgress,
-	CssBaseline,
 	FormControl,
 	Grid,
-	Hidden,
-	IconButton,
-	InputAdornment,
 	InputLabel,
 	MenuItem,
 	OutlinedInput,
 	Select,
-	TextField,
-	Toolbar,
-	Typography,
 	makeStyles,
 } from "@material-ui/core";
 import { CartesianGrid, Legend, Line, LineChart, Tooltip, XAxis, YAxis } from "recharts";
-import { Error, LockOpen, Visibility, VisibilityOff } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
-import { Redirect, useHistory, useLocation } from "react-router-dom";
-import { handleErrors, useAuth } from "../services";
 import { useDispatch, useSelector } from "react-redux";
 
 import { setFavorites } from "../actions/favoritesActions"
@@ -119,6 +103,8 @@ export default function Dashboard() {
 			</Grid>
 			<Grid item xs={12} className={classes.button}>
 				<Button
+					variant="contained"
+					color="primary"
 					onClick={() => {
 						selectedFavorites?.includes(selectedCoin) ?
 						handleRemoveCoin(selectedCoin) :

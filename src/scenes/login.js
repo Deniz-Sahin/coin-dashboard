@@ -17,7 +17,7 @@ import {
 	makeStyles,
 } from "@material-ui/core";
 import { Error, LockOpen, Visibility, VisibilityOff } from "@material-ui/icons";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Redirect, useHistory, useLocation } from "react-router-dom";
 import { handleErrors, useAuth } from "../services";
 
